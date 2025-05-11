@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ExpLaboral from "../components/ExpLaboral.astro";
+import Proyectos from "../components/Proyectos.astro";
+import SobreMi from "../components/SobreMi.astro";
+import Contacto from "../components/Contacto.astro";
+import Serch from "../components/icons/Serch.astro";
+---
+
+<Layout title="Mi portfolio.">
+  <main class="flex justify-around items-center">
+    <article class="px-2 md:px-6 md:max-w-[750px] grid justify-center">
+      <section class="mt-16 sm:mt-24 md:mt-32">
+        <div class="flex flex-row items-center gap-x-4 pb-4">
+        </div>
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-center sm:text-left flex-row gap-x-4 pb-4"
+        >
+          Leonardo Agustin Dominguez
+        </h1>
+        <h2 class="text-md sm:text-xl text-center sm:text-left opacity-90 pb-4">
+          Desarrollador mobil y web. <span class="text-violet-300"
+            >De Mendoza, Argentina.</span
+          > Enfocado en crear aplicaciones únicas y efectivas para cada proyecto.
+        </h2>
+        <div class="flex flex-row gap-x-4 justify-center sm:justify-start">
+          <a
+            href="https://github.com/Odranoel998"
+            class="py-1 px-2 border border-inherit bg-transparent hover:bg-white text-violet-300 hover:text-black text-sm font-bold rounded-xl transition duration-300"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/leonardo-dominguez98/"
+            class="py-1 px-2 border border-inherit bg-transparent hover:bg-white text-violet-300 hover:text-black text-sm font-bold rounded-xl transition duration-300"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </section>
+      <ExpLaboral />
+      <!-- <Proyectos /> -->
+      <SobreMi />
+      <Contacto />
+    </article>
+  </main>
+</Layout>

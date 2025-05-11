@@ -1,0 +1,51 @@
+---
+import Header from "../components/Header.astro";
+import "@fontsource-variable/nunito";
+---
+
+<!doctype html>
+<html lang="es" class="!scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="RacconWizerViolet.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>DevOdranoel</title>
+	</head>
+	<body>
+		<!-- <div
+			class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+		>
+		</div> -->
+		<Header />
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		color-scheme: dark;
+	}
+	html {
+		font-family: 'Inter', sans-serif;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #1d0230;
+		background-image: 
+			url('../../public/RacconWizerViolet.png'),
+			radial-gradient(
+			ellipse 80% 80% at 50% -20%,
+			rgba(80, 60, 160, 0.25),
+			rgba(40, 20, 80, 0.1)
+		);
+		background-repeat:no-repeat;
+		background-position: top right;
+		background-blend-mode: normal;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		font-family: "Nunito Variable", sans-serif;
+	}
+</style>
